@@ -27,7 +27,6 @@ import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
           <Route path='/user/update/:id' element={<UpdateUser/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element={<Register/>} />
-          <Route path='/registerPj' element={<RegisterPj/>} />
           <Route path='/productScreen' element={<ProductScreen/>} />
           <Route path='/finalizeOrder' element={<FinalizeOrder/>} />
         </Routes>
