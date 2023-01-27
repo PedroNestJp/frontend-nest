@@ -6,39 +6,39 @@ const ContactLine1 = () => {
     return(
     <div className="contactsLine" id="contactsLineHome">
     <span> 
-        <Link href="https://www.facebook.com/nestinformatica/"> 
+        <a href="https://www.facebook.com/nestinformatica/"> 
             <img id="iconFacebook" className="social-media" srcSet={iconFacebook} alt=""/>
-        </Link>
+        </a>
     </span>
     <span>
-      <Link href="#"> 
+      <a href="#"> 
         <img className="social-media" srcSet={iconGmail} alt=""/> 
-      </Link>
+      </a>
     </span>
     <span>
-      <Link href="https://www.instagram.com/nestinformatica/"> 
+      <a href="https://www.instagram.com/nestinformatica/"> 
         <img className="social-media" srcSet={iconInstagram}  alt=""/> 
-      </Link>
+      </a>
     </span>
     <span> 
-      <Link  href="https://www.linkedin.com/company/nestinformatica/"> 
+      <a  href="https://www.linkedin.com/company/nestinformatica/"> 
         <img className="social-media" srcSet={iconLinkedin} alt=""/> 
-      </Link>
+      </a>
     </span>
     <span> 
-      <Link href="#"> 
+      <a href="#"> 
        <img className="social-media" srcSet={iconTelegram} alt=""/> 
-      </Link>
+      </a>
     </span>
     <span> 
-      <Link href="#"> 
+      <a href="#"> 
         <img className="social-media" srcSet={iconWhatsapp} alt=""/> 
-      </Link>
+      </a>
     </span>
     <span> 
-      <Link href="https://www.youtube.com/channel/UCBH2a3RXY619wpctYJU8IbQ"> 
+      <a href="https://www.youtube.com/channel/UCBH2a3RXY619wpctYJU8IbQ"> 
           <img className="social-media" srcSet={iconYoutube} alt=""/>  
-      </Link>
+      </a>
     </span>
 </div>
 )
@@ -48,39 +48,39 @@ const ContactLine2 = () =>{
     return(
         <div className="contactsLine-2">
         <span>
-        <Link href="https://www.facebook.com/nestinformatica/"> 
+        <a href="https://www.facebook.com/nestinformatica/"> 
                 <img id="iconFacebook" className="social-media" srcSet={iconFacebook} alt=""/>
-            </Link>
+            </a>
         </span> 
         <span> 
-          <Link href="#"> 
+          <a href="#"> 
             <img className="social-media" srcSet={iconGmail} alt=""/> 
-          </Link>
+          </a>
         </span>
         <span> 
-          <Link href="https://www.instagram.com/nestinformatica/"> 
+          <a href="https://www.instagram.com/nestinformatica/"> 
             <img className="social-media" srcSet={iconInstagram}  alt=""/> 
-          </Link>
+          </a>
         </span>
         <span> 
-          <Link  href="https://www.linkedin.com/company/nestinformatica/"> 
+          <a  href="https://www.linkedin.com/company/nestinformatica/"> 
             <img className="social-media" srcSet={iconLinkedin} alt=""/> 
-          </Link>
+          </a>
         </span>
         <span> 
-          <Link href="#"> 
+          <a href="#"> 
            <img className="social-media" srcSet={iconTelegram} alt=""/> 
-          </Link>
+          </a>
         </span>
         <span> 
-          <Link href="#"> 
+          <a href="#"> 
             <img className="social-media" srcSet={iconWhatsapp} alt=""/> 
-          </Link>
+          </a>
         </span>
         <span> 
-          <Link href="https://www.youtube.com/channel/UCBH2a3RXY619wpctYJU8IbQ"> 
+          <a href="https://www.youtube.com/channel/UCBH2a3RXY619wpctYJU8IbQ"> 
               <img className="social-media" srcSet={iconYoutube} alt=""/>  
-          </Link>
+          </a>
         </span>
   </div>
 )
