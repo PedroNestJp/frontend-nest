@@ -1,0 +1,250 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainContentProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+}
+
+.containerProductFather{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    
+    background: #D9D9D9;
+}
+
+@media (max-width:922px){
+    .containerProductFather{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+        
+        background: #D9D9D9;
+    }
+}
+
+.containerProductChild1{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgsProducts{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.imgsProducts #redragonSuperior1,#redragonSuperior2,#redragonSuperior3{
+
+    width: 90px;
+    height: 90px;
+}
+
+.imgPrincipal{
+    width: 567px;
+    height: 660px;
+}
+
+.containerProductDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+}
+
+.promotionCall{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #D9D9D9;
+
+}
+
+.stopwatch{
+
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardsPromo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    height: 70%;
+
+}
+
+.offerDiscaunt{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 184px;
+    height: 60px;
+    background: #FFFFFF;
+
+}
+
+.numberOfSales{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 184px;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.offersEnd{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+    color: #E20100;
+}
+
+.timeLeft{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+
+    color: #000000;
+}
+
+.descText{
+
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #000000;
+
+}
+
+.rating{
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.hanking{
+
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+}
+
+.buttonTop10{
+    
+    width: 142px;
+    height: 36px;
+    
+    background: #E20100;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.hanking, .buttonTop10{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.value{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.oldPriceProductScreen, .installmentPriceProductScreen{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.currentPriceProductScreen{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    
+    color: #E20100;
+
+}
+
+.discountPix{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: rgba(226, 1, 0, 0.8);
+
+}
+
+.addCart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.addCartButton{
+
+    margin-top: 100px;
+    height: 104px;
+    width: 100%;
+    background: rgba(226, 1, 0, 0.81);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
