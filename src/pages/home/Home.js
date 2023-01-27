@@ -1,8 +1,8 @@
 import React from "react"
+import "../home/Home.css"
 import {HomeScComponente} from '../../components/HomeComponents'
 import { HomeNavbarComponente } from "../../components/HomeNavbarComponent"
 import { ContactLine1, ContactLine2 } from "../../components/ContactLines"
-import "../home/Home.css"
 import {Footer, SubFooter} from "../../components/FooterComponents"
 
 
