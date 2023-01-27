@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:process.env.REACT_APP_API_URL
+    DATABASE_URL:'https://backend-nest.herokuapp.com/'
 })
 
 export default api
