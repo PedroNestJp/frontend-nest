@@ -10,3 +10,4 @@ const RegisterPj = () =>{
         </div>
     )
 }
+export default RegisterPj

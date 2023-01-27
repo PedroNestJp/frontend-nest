@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { logo } from "../img/imgs"
 import '../pages/home/Home.css'
 
@@ -71,9 +70,9 @@ const SubFooter = ()=>{
             <div className="certifications"></div>
                 <div className="businessInformation">
                     <div className="logoSubFooter">
-                        <Link to='/home'>
+                        <a href="/home">
                             <img className="logoSubFooter" src={logo} alt='logo' />
-                        </Link>
+                        </a>
                     </div>
                     <div className="businessTexts">
                         <p> NEST INFORMÁTICA ATACADO E VAREJO DE PRODUTOS DE INFORMATICA LTDA </p>

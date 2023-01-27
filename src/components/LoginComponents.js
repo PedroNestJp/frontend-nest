@@ -1,10 +1,5 @@
 import React from "react";
-import '../pages/Login/Login'
-import LoginCss from '../pages/Login/Login.css'
-import logo from '../assets/logoNestHome.png'
-import iconProfile from '../assets/icons/icon-profile.png'
-
-
+import '../pages/Login/Login.css'
 
 const LoginComponent = () => {
 

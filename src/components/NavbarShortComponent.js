@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import {iconProfile, logo } from '../img/imgs'
 
 
@@ -11,7 +11,7 @@ const NavbarShortComponent = () =>{
         </a>
         <div className='areaProfileNavShort'>
             <a href="./myAccount.html">               
-                <i className="fa-solid fa-user"></i>
+                <img className='iconProfileHome' src={iconProfile}/>
             </a>
             <span className="textProfileNavShort">
                     Faça seu{' '}

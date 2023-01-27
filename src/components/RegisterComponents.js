@@ -1,5 +1,5 @@
 import React from 'react'
-import RegisterCss from '../pages/register/Register.css'
+import '../pages/register/Register.css'
 import '../pages/register/Register'
 
 const RegisterComponents = () =>{
