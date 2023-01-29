@@ -30,14 +30,14 @@ const CreateUSer = () => {
 
     return (
         <div>
-            <h1>Cadastrar usuário</h1>
-            <Link to="/users">
-                <button>
-                    Voltar
-                </button>
-            </Link> 
+            <h1>Criar Conta</h1>
+                <Link to="/users">
+                    <button>
+                        Voltar
+                    </button>
+                </Link> 
             <div>
-                <label>Nome:</label>
+                <label>Nome Completo:</label>
                 <input 
                     type="text" 
                     name="nome" 
