@@ -18,12 +18,6 @@ const RegisterComponents = () =>{
     const [acceptTermTwo, setAcceptTermTwo] = useState("")
     const navigate = useNavigate();
 
-    useEffect(() => {
-        registerUser()
-    }, [])
-
-
-
     const registerUser = async (event) => {
         event.preventDefault()
         const user = {
