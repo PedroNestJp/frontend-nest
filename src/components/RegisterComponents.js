@@ -18,6 +18,10 @@ const RegisterComponents = () =>{
     const [acceptTermTwo, setAcceptTermTwo] = useState("")
     const navigate = useNavigate();
 
+    useEffect(() => {
+        registerUser()
+    }, [])
+
 
 
     const registerUser = async (event) => {
@@ -38,7 +42,6 @@ const RegisterComponents = () =>{
             navigate("/users");
         }
     }
-    useState()
 
 return(
 

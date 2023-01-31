@@ -21,7 +21,11 @@ const CreateUSer = () => {
             senha: senha,
             repetirSenha: repetirSenha
         }
-        const resposta = await api.post('/user/create', user)
+        const resposta = await api.post('/user/create', user, {
+            headers: {
+            Accept: "*",
+            "User-Agent": "axios 0.21.1"}})
+        
         if (resposta.status === 200) {
             navigate("/users");
         }

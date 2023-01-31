@@ -1,11 +1,12 @@
 import api from "../../service/Api"
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const ListUser = () => {
 
     const [usuarios, setUser] = useState([])
+    const navigate = useNavigate()
 
 useEffect(() => {
      recuperarUsuarios()
@@ -15,9 +16,7 @@ useEffect(() => {
         const resposta = await api.get('/users')
         setUser(resposta.data)
     }
-    recuperarUsuarios()
-    // if (resposta.status === 200 || response.status === 201) {
-    //     return resposta;
+    navigate('/users')
 
     function preencheTabela() {
         return usuarios.map((user) => (
