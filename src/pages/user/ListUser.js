@@ -7,9 +7,9 @@ const ListUser = () => {
 
     const [usuarios, setUser] = useState([])
 
-    // useEffect(() => {
-    //     recuperarUsuarios()
-    // }, [])
+useEffect(() => {
+     recuperarUsuarios()
+     }, [])
 
     const recuperarUsuarios = async () => {
         const resposta = await api.get('/users')
