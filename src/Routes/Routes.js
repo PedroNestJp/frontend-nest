@@ -11,6 +11,7 @@ import Login from '../pages/Login/Login'
 import Register from '../pages/register/Register'
 import ProductScreen from '../pages/product/ProductScreen'
 import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
+import RegisterComponents from '../components/RegisterComponents'
 
  const Rotas = () => {
     return(
@@ -22,7 +23,7 @@ import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
           <Route path='/product/update/:id' element={<EditProduct />} />
           <Route path='/product/delete/:id' element={<EditProduct />} />
           <Route path='/users' element={<ListUser/>} />
-          <Route path='/user/create' element={<CreateUSer/>} />
+          <Route path='/user/create' element={<RegisterComponents/>} />
           <Route path='/user/update/:id' element={<UpdateUser/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element={<Register/>} />
