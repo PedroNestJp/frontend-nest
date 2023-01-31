@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const ListUser = () => {
 
     const [usuarios, setUser] = useState([])
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
 useEffect(() => {
      recuperarUsuarios()
@@ -16,7 +16,6 @@ useEffect(() => {
         const resposta = await api.get('/users')
         setUser(resposta.data)
     }
-    navigate('/users')
 
     function preencheTabela() {
         return usuarios.map((user) => (
