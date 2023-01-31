@@ -12,7 +12,6 @@ import Register from '../pages/register/Register'
 import ProductScreen from '../pages/product/ProductScreen'
 import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
 
-
  const Rotas = () => {
     return(
         <Routes>
@@ -32,6 +31,7 @@ import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
         </Routes>
     )
 }
+
 export default Rotas
 
  

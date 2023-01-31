@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from 'react-router-dom'
 import api from  '../../service/Api'
-
+import cors from 'cors'
 
 const CreateUSer = () => {
     const [nomeCompleto, setNomeCompleto] = useState("")
