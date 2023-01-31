@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import api from  '../service/Api'
-import { useNavigate } from 'react-router-dom'
+import {Link , useNavigate } from 'react-router-dom'
 
 import '../pages/register/Register.css'
 import '../pages/register/Register'
