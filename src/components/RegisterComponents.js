@@ -156,7 +156,7 @@ return(
         </section>
 
         <div className='btnCreateAccount' >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <Link to="/user/create">
                 <button 
                     className="creat-account" 
                     type="submit" 
@@ -164,7 +164,7 @@ return(
                     onClick={(e) =>  registerUser(e)}> 
                     <span className="creat-account-text"> CRIAR CONTA </span> 
                 </button>
-            </a>
+            </Link>
         </div>
          
     </div>
