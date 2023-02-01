@@ -22,7 +22,6 @@ const CreateUSer = () => {
             repetirSenha: repetirSenha
         }
         const resposta = await api.post('/user/create', user)
-        
         if (resposta.status === 200) {
             navigate("/users");
         }

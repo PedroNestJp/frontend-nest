@@ -19,7 +19,7 @@ import RegisterComponents from '../components/RegisterComponents'
           <Route path='/' index  element={<Home />} />
           <Route path='/home' index  element={<Home />} />
           <Route path='/products' element={<ListProducts />} />
-          <Route path='/product/create' element={<CreateProduct />} />
+          <Route path='/product/create' element={<RegisterComponents/>} />
           <Route path='/product/update/:id' element={<EditProduct />} />
           <Route path='/product/delete/:id' element={<EditProduct />} />
           <Route path='/users' element={<ListUser/>} />
