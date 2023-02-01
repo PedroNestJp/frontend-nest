@@ -23,7 +23,7 @@ const RegisterComponents = () =>{
         }, [])
 
     const registerUser = async (event) => {
-        event.preventDefault()
+        // event.preventDefault()
         const user = {
             nomeCompleto: nomeCompleto,
             cpf: cpf,

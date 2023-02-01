@@ -29,6 +29,7 @@ import RegisterComponents from '../components/RegisterComponents'
           <Route path='/register' element={<Register/>} />
           <Route path='/productScreen' element={<ProductScreen/>} />
           <Route path='/finalizeOrder' element={<FinalizeOrder/>} />
+          <Route path='/createUser' element={<CreateUSer/>} />
         </Routes>
     )
 }
