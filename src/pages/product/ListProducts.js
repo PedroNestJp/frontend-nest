@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../../service/Api'
 
-const ListProducts = () => {
+const ListarProdutos = () => {
 
     const [produtos, setProdutos] = useState([])
     const navigate = useNavigate()
@@ -19,9 +19,6 @@ const ListProducts = () => {
     const deletarProduto = async (id) => {
         const resposta = await api.delete(`/product/delete/${id}`)
         setProdutos(resposta.data)
-        
-        
-        
     } 
     navigate('/products')
 
@@ -73,4 +70,4 @@ const ListProducts = () => {
     )
 }
 
-export default ListProducts
+export default ListarProdutos
