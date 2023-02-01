@@ -12,7 +12,7 @@ const CreateUSer = () => {
     const navigate = useNavigate();
 
     const cadastrarUSer = async (event) => {
-        event.preventDefault()
+        event()
         const user = {
             nomeCompleto: nomeCompleto,
             cpf: cpf,
