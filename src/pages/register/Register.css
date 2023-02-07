@@ -40,12 +40,9 @@
 
 .textProfileNavShort {
 
-   width: 90px;
+    width: 90px;
     margin-left: 5px;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins';
-    font-style: normal;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;

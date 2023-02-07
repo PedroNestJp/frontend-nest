@@ -1,7 +1,11 @@
-import { iconProfile, logo, menuHamburguer,iconShopCart, iconSupport, iconFavorites, iconLupa  } from "../img/imgs"
+import {logo } from "../img/imgs"
 import "../pages/home/Home.css"
 import { Link } from "react-router-dom"
-
+import Navbar from "./Navbar"
+import * as BsIcons from 'react-icons/bs'
+import * as RxIcons from 'react-icons/rx'
+import * as FaIcons from 'react-icons/fa'
+import * as RiIcons from 'react-icons/ri'
 
 const HomeNavbarComponente = () =>{
     return(
@@ -12,9 +16,10 @@ const HomeNavbarComponente = () =>{
                 <option value='escolha'> escolha </option>
             </select>
         </div> */}
-          <span > 
+          {/* <span > 
             <img srcSet={menuHamburguer} className="menuHamburguer" src="../assets/icons/menuHamburguer.png" alt=""/> 
-          </span>
+          </span> */}
+          <Navbar/>
 
           <Link to='/home'>
             <img className="logoNestHeaderHome" src={logo} alt='logo' />
@@ -29,21 +34,21 @@ const HomeNavbarComponente = () =>{
                 type="text">
               </input>
               <button className="button-submit" >
-                <img srcSet={iconLupa} 
-                  id="icon-lupa" 
-                  title="icon-lupa" 
-                  className="icon-lupa" 
-                  type="submit"  
-                  alt="icon-lupa"/>
+              <Link 
+                to='/products' type='submit'  
+                className='icon-lupa'
+                alt='icon-lupa'
+                title="icon-lupa"
+
+                > 
+                <RxIcons.RxMagnifyingGlass/>
+              </Link>
               </button>
           </div>
 
           <div className="areaProfile"> 
-              <Link to='/myAccount'>
-                <img 
-                  className="iconProfileHome" 
-                  src={iconProfile} 
-                  alt="iconProfile"/> 
+              <Link to='/myAccount' alt="iconProfile" className="iconProfileHome" >
+                  <BsIcons.BsPersonCircle/>
               </Link>
               <span 
               className="text-profile-home">
@@ -71,38 +76,35 @@ const HomeNavbarComponente = () =>{
           <div className="iconsNavHome">
             <span> 
               <Link 
-                to='/ShoppingCart'> 
-                <img 
-                  srcSet={iconShopCart} 
-                  className="icon-shoppingCart" 
-                  id="iconShoppingCart" 
-                  title="icon-shoppingCart"  
-                  src="../assets/icons/icon-shoppingCart.png" 
-                  alt="iconShoCar"/>
+                to='/ShoppingCart'
+                className="icon-shoppingCart" 
+                id="iconShoppingCart" 
+                title="icon-shoppingCart"  
+                src="../assets/icons/icon-shoppingCart.png" 
+                alt="iconShoCar">
+                <FaIcons.FaShoppingCart/>
               </Link>
             </span>
             <span> 
                 <Link 
-                  to='/Support'>
-                    <img 
-                      srcSet={iconSupport} 
-                      className="icon-support" 
-                      id="iconSupporte" 
-                      title="iconSupporte" 
-                      src="../assets/icons/icon-support.png" 
-                      alt="iconSupport"/>
+                  to='/Support'
+                  className="icon-support" 
+                  id="iconSupporte" 
+                  title="iconSupporte" 
+                  src="../assets/icons/icon-support.png" 
+                  alt="iconSupport">
+                  <RiIcons.RiCustomerService2Fill/> 
                 </Link>
             </span>
             <span > 
                 <Link 
-                  to='/Favorites'>
-                    <img 
-                      srcSet={iconFavorites} 
-                      className="favoriteIcon" 
-                      id="favoriteIcon" 
-                      title="Favoriteicon" 
-                      src="../assets/icons/favoriteIcon.png" 
-                      alt="Favorite Icon"/>
+                  to='/Favorites'
+                  className="favoriteIconNav" 
+                  id="favoriteIconNav" 
+                  title="Favoriteicon" 
+                  src="../assets/icons/favoriteIcon.png" 
+                  alt="Favorite Icon">
+                  <BsIcons.BsHeartFill/>
                 </Link>
             </span>
           </div>

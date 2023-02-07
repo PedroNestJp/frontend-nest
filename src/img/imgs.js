@@ -38,7 +38,9 @@ import redragonSuperior1 from '../assets/gabinetes/redragon-superior-01.jpg'
 import redragonSuperior2 from '../assets/gabinetes/redragon-superior-02.jpg'
 import redragonSuperior3 from '../assets/gabinetes/redragon-superior-03.jpg'
 
-export {iconTime, redragonSuperior1, redragonSuperior2 ,redragonSuperior3 ,iconProfile,logo, iconBuy, iconChat, 
+import gamdiasAuraGc2 from '../assets/gabinetes/gabinete-gamdias-aura-gc2.png'
+
+export {iconTime,gamdiasAuraGc2, redragonSuperior1, redragonSuperior2 ,redragonSuperior3 ,iconProfile,logo, iconBuy, iconChat, 
         iconFacebook, iconFavorites, iconGmail, 
         iconLinkedin, iconLupa, iconShopCart, iconSupport, iconTelegram, 
         iconWhatsapp, iconYoutube, imgAmdType, imgBackground2, iconInstagram, 

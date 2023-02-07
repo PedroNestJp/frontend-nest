@@ -12,6 +12,7 @@ import RegisterScreen from '../pages/register/Register'
 import ProductScreen from '../pages/product/ProductScreen'
 import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
 import RegisterComponents from '../components/RegisterComponents'
+import NestPcOneSc from '../components/productsComponents/NestPcOne'
 
  const Rotas = () => {
     return(
@@ -22,6 +23,8 @@ import RegisterComponents from '../components/RegisterComponents'
           <Route path='/register' element={<RegisterScreen/>} />
           <Route path='/productScreen' element={<ProductScreen/>} />
           <Route path='/finalizeOrder' element={<FinalizeOrder/>} />
+
+          <Route path='/nestPcOne' element={<NestPcOneSc/>} />
           
           <Route path='/products' element={<ListProducts />} />
           <Route path='/product/create' element={<CreateProduct />} />

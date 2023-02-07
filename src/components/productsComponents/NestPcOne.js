@@ -1,23 +1,22 @@
-import  '../pages/product/ProductScreen.css'
-import { iconShopCart, iconTime, redragonSuperior1, redragonSuperior2, redragonSuperior3 } from '../img/imgs'
+import "../../pages/product/ProductScreen.css"
+import { iconShopCart, iconTime, gab1, gamdiasAuraGc2  } from '../../img/imgs'
 
-const ProductScreen = () => {
+const NestPcOneSc = () => {
     return(
 
         <div className="mainContentProduct">
             <div className="containerProductFather">
                 <section className='containerProductChild1'>
                     <div className="imgProduct">
-                        <img id='imgPrincipal' src={redragonSuperior1}/>
+                        <img className="imgPrincipal" src={gamdiasAuraGc2}/>
                     </div>
                     <div className="imgsProducts">
-                    <span className='imgsProductsSub'>
-                        <img id='redragonSuperior1' src={redragonSuperior1}/>
-                        <img id='redragonSuperior2' src={redragonSuperior2}/>
-                        <img id='redragonSuperior2' src={redragonSuperior3}/>
-                    </span>
+                        <span className='imgsProductsSub'>
+                            <img id='nestPcOneImgSec1' src={gamdiasAuraGc2}/>
+                            <img id='nestPcOneImgSec2' src={gamdiasAuraGc2}/>
+                            <img id='nestPcOneImgSec2' src={gamdiasAuraGc2}/> 
+                        </span>
                     </div>
-
                 
                 </section>
                 <section className="containerProductDesc">
@@ -28,7 +27,7 @@ const ProductScreen = () => {
                         </div>
                         <div className='cardsPromo' >
                             <div className='offerDiscaunt'>
-                                <span> 6 </span>
+                                <span> 2 </span>
                                 <span> Vendidos </span>
                             </div>
                             <div className='numberOfSales'>
@@ -39,9 +38,9 @@ const ProductScreen = () => {
 
                     </div>
                     <div className="descText">
-                    Gabinete Gamer Redragon Superion,
-                    Mid Tower, Vidro Temperado, Black,
-                    ATX, Sem Fonte, Sem Fan, GC-MB211
+                    NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6,
+                    16GB RAM 3200MHZ 2X8GB, SSD 512GB, 
+                    FONTE 500W 80+ BRONZE, 3 FANS RGB
                     </div>
                     <div className="rating">
                         <div className='ratingStars'> ⭐⭐⭐⭐⭐ </div>
@@ -55,9 +54,9 @@ const ProductScreen = () => {
                     </div>
                     <div className="value">
                     
-                        <span className="oldPriceProductScreen"> DE R$3.999,00 POR: </span>
-                        <span className="currentPriceProductScreen"> R$3.360,00 </span>
-                        <span className=" installmentPriceProductScreen"> OU 12X DE R$280,00 </span>
+                        <span className="oldPriceNestPcOneSc"> DE R$3.999,00 POR: </span>
+                        <span className="currentPriceProductScreen"> R$2.999,00 </span>
+                        <span className=" installmentPriceProductScreen"> OU 12X DE R$249,00 </span>
                         <span className="discountPix"> 15% de desconto no pix </span>
 
                     </div>
@@ -77,4 +76,4 @@ const ProductScreen = () => {
     )
 }
 
-export default ProductScreen
+export default NestPcOneSc

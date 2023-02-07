@@ -75,13 +75,6 @@ input:hover{
 
 }
 
-/* .fa-solid fa-user{
-
-    color: #F5F5F5;
-    padding-top: 10px;
-    display: flex;
-} */
-
 .areaProfile{
     display: flex;
     align-items: center;
@@ -120,10 +113,18 @@ input:hover{
     
 }
 
-.icon-support, .icon-shoppingCart, .favoriteIcon#favoriteIcon, .iconProfileHome{
+.icon-support, .icon-shoppingCart, .favoriteIconNav, .iconProfileHome{
     border-radius: 50%;
     margin: 3px;
     width: 25px;
+}
+
+.favoriteIconNav{
+    color: #F5F5F5;
+}
+
+.favoriteIcon:hover{
+    color: #e20100;
 }
 
 .contactsLine#contactsLineHome {
@@ -204,11 +205,11 @@ input:hover{
 
     cursor: pointer;
     width: 250px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 .img-typepc-1:hover,.img-typepc-2:hover,.img-typepc-3:hover {
     width: 265px;
     filter: drop-shadow(0px 10px 10px rgba(121, 20, 20, 0.6));
+    z-index: -1;
 }
 
 .textTypePc-1:hover,.textTypePc-2:hover,.textTypePc-3:hover {
@@ -316,20 +317,21 @@ a#textTypePc{
 
 .styleBox:hover{
     cursor:pointer;
-    filter: drop-shadow(0px 5px 5px rgba(121, 20, 20, 0.6));
+    border: #E20100 solid 1px;
+    /* filter: drop-shadow(0px 5px 5px rgba(121, 20, 20, 0.6)); */
     transition: 0.3s;
 
 }
 
 .favoriteIcon{
 
-    position: relative;
+    color: #000000;
     margin-left: 85%;
     cursor: pointer;
 }
 
 .favoriteIcon:hover{
-   background-color: #e20100;
+   color: #e20100;
 
 }
 
@@ -409,6 +411,8 @@ a#textTypePc{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 5px;
+
 
 }
 
@@ -438,18 +442,18 @@ a#textTypePc{
     font-size: 18px;
     color: #FF0101;
 }
-.platform-intel, .platform-amd {
+.platform-amd ,.platform-intel {
     cursor: pointer;
     width: 380px;
     height: 140px;
-    border-radius: 5px;
+    border-radius: 13px;
 }
 
-.platform-intel:hover, .platform-amd:hover{
-    width: 400px;
-    height: 172px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 5px;
+.platform-intel:hover,.platform-amd:hover{
+    width: 390px;
+    height: 150px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    border-radius: 13px;
 }
 
 .container-3{

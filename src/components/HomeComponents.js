@@ -5,6 +5,9 @@ import {
         logo, iconChat, iconFavorites, imgAmdType,typepc1, typepc2, typepc3, 
         gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, imgBbdPeripherals, imgBbdHardware
 } from '../img/imgs'
+import * as RiIcons from 'react-icons/ri'
+import * as BsIcons from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const HomeScComponente = () => {
 return(
@@ -16,9 +19,14 @@ return(
     </section> 
 
     <span> 
-      <a target="_blank" rel='noreferrer' href="https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0">
-          <img className="icon-chat" src={iconChat} alt=""/> 
-      </a>  
+      <Link 
+        className="icon-chat"
+        target="_blank" 
+        rel='noreferrer' 
+        to="https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0"  
+        alt="Chat do Whatsapp">
+        <RiIcons.RiWhatsappFill/> 
+      </Link>  
     </span>
 
 <section className="container"> 
@@ -45,7 +53,12 @@ return(
         <div id="hl" title="highlights" className="hl-text">  DESTAQUES </div>
         <div className='highLightsBoxs' id='highlightsBoxs'>
             <div className="hl-1 styleBox"> 
-                <img className="favoriteIcon favoriteIcon-hl-1" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/>
+                 <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link>
                 <img className="img-hl-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
                 <div className="descValue  desc-hl-1">
                     <span className="oldPrice-hl-1 oldPrice-hl"> DE R$2.999,00 POR: </span>
@@ -56,7 +69,12 @@ return(
             </div>
 
             <div className="hl-2 styleBox">
-                <img className="favoriteIcon favoriteIcon-hl-2" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/>
+                <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link>
                 <img className="img-hl-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
                 <div className='descValue desc-hl-2'>    
                     <span className="oldPrice-hl-3 oldPrice-hl"> DE R$2.999,00 POR: </span>
@@ -67,7 +85,12 @@ return(
             </div>
 
             <div className="hl-3 styleBox"> 
-                <img className="favoriteIcon favoriteIcon-hl-3" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/> 
+                <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link>
                 <img className="img-hl-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
                 <div className="descValue desc-hl-3">  
                     <span className="oldPrice-hl-3 oldPrice-hl"> DE R$2.999,00 POR: </span>
@@ -84,11 +107,11 @@ return(
         <div className='divBuyByPlatform'>
             <div className='divPlatformIntel' id='textPlatform'>            
                 <span className="text-platform-intel"> INTEL </span>
-                <img className="platform-intel" srcSet={imgIntelType} src="../assets/icons/img-intel-processor.png" alt=""/>
+                <img className="platform-intel" srcSet={imgIntelType} src="../assets/icons/img-intel-processor.png" alt="Plataforma Intel"/>
             </div>
             <div className='divPlatformAmd' id='textPlatform'>
                 <span className="text-platform-amd"> AMD </span>
-                <img className="platform-amd" srcSet={imgAmdType} src="../assets/icons/img-amd-processor.png" alt=""/>
+                <img className="platform-amd" srcSet={imgAmdType} src="../assets/icons/img-amd-processor.png" alt="Plataforma AMD"/>
             </div>
         </div>
 </section>
@@ -97,7 +120,12 @@ return(
     <div className="bs-text"> MAIS VENDIDOS </div>
     <div className='bestSelersBox' id='highlightsBoxs'>
         <div className="bs-1 styleBox"> 
-            <img className="favoriteIcon favoriteIcon-bs-1" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/> 
+                <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link>
             <img className="img-bs-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
             <div className="descValue desc-bs-1"> 
                 <span className=" oldPrice-bs-1 oldPrice"> DE R$2.999,00 POR: </span>
@@ -108,7 +136,12 @@ return(
         </div>
 
         <div className="bs-2 styleBox">
-            <img className="favoriteIcon favoriteIcon-bs-2" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/>  
+                <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link> 
             <img className="img-bs-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
             <div className="descValue desc-bs-2"> 
                 <span className=" oldPrice-bs-2 oldPrice"> DE R$2.999,00 POR: </span>
@@ -119,7 +152,12 @@ return(
         </div>
 
         <div className="bs-3 styleBox">  
-            <img className="favoriteIcon favoriteIcon-bs-3" srcSet={iconFavorites} src="../assets/icons/favorite-icon.png" alt=""/> 
+                <Link
+                    to='/favorites'
+                    className="favoriteIcon"  
+                    alt="">
+                    <BsIcons.BsHeartFill/>
+                </Link>
             <img className="img-bs-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
             <div className="descValue desc-bs-3"> 
                 <span className=" oldPrice-bs-3 oldPrice"> DE R$2.999,00 POR: </span>

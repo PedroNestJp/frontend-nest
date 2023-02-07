@@ -1,4 +1,4 @@
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 import Routes from './Routes/Routes'
 
 function App() {
