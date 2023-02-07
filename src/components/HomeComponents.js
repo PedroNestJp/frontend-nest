@@ -1,49 +1,89 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../pages/home/Home'
 import "../pages/home/Home.css"
 import {
-        logo, iconChat, iconFavorites, imgAmdType,typepc1, typepc2, typepc3, 
+        logo,imgAmdType,typepc1, typepc2, typepc3, 
         gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, imgBbdPeripherals, imgBbdHardware
 } from '../img/imgs'
 import * as RiIcons from 'react-icons/ri'
 import * as BsIcons from 'react-icons/bs'
-import { Link } from 'react-router-dom'
 
 const HomeScComponente = () => {
 return(
 <>
     <section className="adsDiv"> 
         <h1 className="ads-text "> ADS </h1>
-        <img className="ads-log" src={logo} alt="logoNest"/>
+        <img className="ads-log" src={logo} alt="logo da Nest"/>
         <h1 className="ads-text "> ADS </h1> 
     </section> 
 
     <span> 
       <Link 
-        className="icon-chat"
+        to="https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0" 
         target="_blank" 
         rel='noreferrer' 
-        to="https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0"  
-        alt="Chat do Whatsapp">
-        <RiIcons.RiWhatsappFill/> 
+        >
+        <RiIcons.RiWhatsappFill 
+            alt="Chat do Whatsapp"
+            className="icon-chat" 
+        /> 
       </Link>  
     </span>
 
 <section className="container"> 
-        <div id="typepc-text" title="typepc-text" className="typepc-text"> QUAL É SEU TIPO DE PC? </div>
+        <div 
+            id="typepc-text" 
+            title="typepc-text" 
+            className="typepc-text" 
+            alt='QUAL É SEU TIPO DE PC?'
+            > QUAL É SEU TIPO DE PC? 
+        </div>
 
         <div className='imgsTypesPcs'>
             <div className='divTypePc1'>
-                <img className="img-typepc-1" srcSet={typepc1} alt=""/>
-                <span className="textTypePc-1 "> <a id='textTypePc' href='./productScreen'> GAMER </a> </span>
+                <Link to='/productScreen'>
+                    <img
+                        className="img-typepc-1" 
+                        src={typepc1} 
+                        alt="PC GAMER">
+                    </img>
+                    <span 
+                        className="textTypePc-1 " 
+                        id='textTypePc'>
+                         GAMER 
+                    </span>
+                </Link>
             </div>
+            
             <div className='divTypePc2'>
-                <img className="img-typepc-2" srcSet={typepc2} alt=""/>
-                <span className="textTypePc-2 "> <a id='textTypePc' href='./productScreen'> OFFICE PREMIUM </a> </span>
+                <Link to='/productScreen'>
+                    <img
+                        className="img-typepc-2" 
+                        src={typepc2} 
+                        alt="PC OFFICE PREMIUM">
+                    </img>
+                    <span 
+                        className="textTypePc-2 " 
+                        id='textTypePc'>
+                        OFFICE PREMIUM
+                    </span>
+                </Link>
             </div>
+
             <div className='divTypePc3'>
-                <img className="img-typepc-3" srcSet={typepc3} alt=""/>
-                <span className="textTypePc-3 "> <a id='textTypePc' href='./productScreen'> OFFICE </a> </span>
+                <Link to='/productScreen'>
+                    <img
+                        className="img-typepc-3" 
+                        src={typepc3} 
+                        alt="PC OFFICE">
+                    </img>
+                    <span 
+                        className="textTypePc-3 " 
+                        id='textTypePc'>
+                         OFFICE 
+                    </span>
+                </Link>
             </div>
         </div>
 </section>     
@@ -56,7 +96,7 @@ return(
                  <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
                 <img className="img-hl-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
@@ -72,7 +112,7 @@ return(
                 <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
                 <img className="img-hl-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
@@ -88,7 +128,7 @@ return(
                 <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
                 <img className="img-hl-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
@@ -123,7 +163,7 @@ return(
                 <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
             <img className="img-bs-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
@@ -139,7 +179,7 @@ return(
                 <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link> 
             <img className="img-bs-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
@@ -155,7 +195,7 @@ return(
                 <Link
                     to='/favorites'
                     className="favoriteIcon"  
-                    alt="">
+                    alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
             <img className="img-bs-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
