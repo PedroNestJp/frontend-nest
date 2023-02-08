@@ -8,7 +8,7 @@ const ListProducts = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        // callProducts()
+            callProducts()
     }, [])
 
     const callProducts = async () => {
@@ -27,8 +27,8 @@ const ListProducts = () => {
             <tr key={produto.id}>
                 <td>{produto.id}</td>
                 <td>{produto.name}</td>
-                <td>{produto.descricao}</td>
-                <td>{produto.valor}</td>
+                <td>{produto.description}</td>
+                <td>{produto.price}</td>
                 <td>{produto.createdAt}</td>
                 <td>
                     <Link 
