@@ -15,21 +15,21 @@ const EditProduct = (props) => {
     })
 
     const buscarProduto = async () => {
-        const resposta = await api.get(`/products/${id}`)
-        setname(resposta.data.name)
-        setdescription(resposta.data.description)
-        setprice(resposta.data.price)
+        const response = await api.get(`/products/${id}`)
+        setname(response.data.name)
+        setdescription(response.data.description)
+        setprice(response.data.price)
     }
 
     const editarProduto = async (event) => {
         event.preventDefault()
-        const produto = {
+        const product = {
             name: name,
             description: description,
             price: price 
         }
-        const resposta = await api.put(`/product/update/${id}`, produto)
-        if (resposta.status === 200) {
+        const response = await api.put(`/product/update/${id}`, product)
+        if (response.status === 200) {
             navigate("/products");
         }
     }
