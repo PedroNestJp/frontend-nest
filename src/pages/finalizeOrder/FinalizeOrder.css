@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
@@ -7,38 +8,34 @@
    
 }
 
-
-.containerMain{
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #D9D9D9;
-    border-radius: 5px;
-    padding: 20px;
- 
-    padding: 20px;
-    margin: 40px;
-    gap: 40px;
-
-}
-  
-
 .titleFinalizeOrder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     text-align: center;
     margin: 100px;
 }
 
+.containerMain{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    margin: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+
+    background-color: #D9D9D9;
+    
+}
+  
+
 .contentFinalizeOrder{
 
     display: flex;
-
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     
 }
 
@@ -46,18 +43,22 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 15px;
     height: 120px;
+    gap: 10px;
 
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 5px;
+
 }
 
 .imgProductAdd{
 
+    display: flex;
     width: 100px;
-    height: 100px;
+    height: 70px;
 
 }
 
@@ -65,35 +66,30 @@
 
     display: flex;
     width: 452px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 12px;
     color: #000000;
 
 }
 
-.selectQuantity{
-
+.buttonsInput{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 92px;
+    gap: 5px;
 }
-
-.quantitySelected{
-    
-    width: 44px;
-    height: 45px;
-    
-    background: #D9D9D9;
-    border-radius: 5px;
-}
-
-button{
+.buttonsInput button{
     width: 19px;
     height: 24px;
+}
+
+.buttonsInput input{
+
+    width: 40px;
+    height: 40px;
+    background: #D9D9D9;
+    border-radius: 5px;
+
 }
 
 .valueProductSelected{
@@ -103,10 +99,11 @@ button{
     flex-direction: column;
 }
 
+
 .boxValueProductSelected{
 
-    width: 132px;
-    height: 45px;
+    width: 110px;
+    height: 40px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -119,10 +116,9 @@ button{
 
     display: flex;
     align-items: center;
-    padding: 20px;
-    gap: 20px;
-    width: 967.19px;
-    height: 120.05px;
+    padding: 15px;
+    gap: 15px;
+    height: 120px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 5px;

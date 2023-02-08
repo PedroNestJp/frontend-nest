@@ -8,7 +8,11 @@ const FinalizeOrderComponent = () =>{
         <div className="containerMain">
             <div className="contentFinalizeOrder">
                 <div className="containerChildOne">
-                    <span > <img className='imgProductAdd' src={redragonSuperior1}/> </span>
+                    <span className='imgProductAdd'> 
+                        <img  
+                            src={redragonSuperior1}
+                        /> 
+                    </span> 
                     <span className='descProductAdd'> 
                         Gabinete Gamer Redragon Superion,
                         Mid Tower, Vidro Temperado, Black,
@@ -16,9 +20,9 @@ const FinalizeOrderComponent = () =>{
                     </span>
                     <div className='selectQuantity'>
                         <span> quantidade </span>
-                        <div>
+                        <div className='buttonsInput'>
                             <button> + </button>
-                            <input className='quantitySelected'/>
+                            <input />
                             <button> - </button>
                         </div>
                     </div>
