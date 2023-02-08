@@ -9,7 +9,7 @@ const RegisterComponents = () =>{
 
     const [fullName, setFullName] = useState("")
     const [cpf, setCpf] = useState("")
-    const [dateBirth, setBirthDate] = useState("")
+    const [dateOfBirth, setBirthDate] = useState("")
     const [email, setEmail] = useState("")
     const [cellPhone, setCell] = useState("")
     const [password, setPassword] = useState("")
@@ -27,7 +27,7 @@ const RegisterComponents = () =>{
         const user = {
             fullName: fullName,
             cpf: cpf,
-            dateBirth : dateBirth,
+            dateOfBirth : dateOfBirth,
             email: email, 
             cellPhone: cellPhone, 
             password: password,
@@ -89,7 +89,7 @@ return(
                 placeholder="Data de Nascimento*:" 
                 type="text" 
                 name="birthDate" id="input-birthDate"
-                value={dateBirth} 
+                value={dateOfBirth} 
                 onChange={() => setBirthDate()}
             />
             <input className="input-tell inputsRegister" 
