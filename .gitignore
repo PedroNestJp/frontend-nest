@@ -10,6 +10,7 @@ yarn.lock
 .pnp.cjs
 .pnp.loader.mjs
 package-lock.json
+.vscode
 
 
 # testing
