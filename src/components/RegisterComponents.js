@@ -7,13 +7,13 @@ import '../pages/register/Register'
 
 const RegisterComponents = () =>{
 
-    const [nomeCompleto, setFullName] = useState("")
+    const [fullName, setFullName] = useState("")
     const [cpf, setCpf] = useState("")
-    const [dataNascimento, setBirthDate] = useState("")
+    const [dateBirth, setBirthDate] = useState("")
     const [email, setEmail] = useState("")
-    const [celular, setCell] = useState("")
-    const [senha, setPassword] = useState("")
-    const [repetirSenha, setRePassword] = useState("")
+    const [cellPhone, setCell] = useState("")
+    const [password, setPassword] = useState("")
+    const [repeatPassword, setRePassword] = useState("")
     const [acceptTermOne, setAcceptTermOne] = useState(2)
     const [acceptTermTwo, setAcceptTermTwo] = useState()
     const navigate = useNavigate();
@@ -25,18 +25,18 @@ const RegisterComponents = () =>{
     const registerUser = async (event) => {
         // event.preventDefault()
         const user = {
-            nomeCompleto: nomeCompleto,
+            fullName: fullName,
             cpf: cpf,
-            dataNascimento : dataNascimento,
+            dateBirth : dateBirth,
             email: email, 
-            celular: celular, 
-            senha: senha,
-            repetirSenha: repetirSenha,
+            cellPhone: cellPhone, 
+            password: password,
+            repeatPassword: repeatPassword,
             acceptTermOne: acceptTermOne,
             acceptTermTwo : acceptTermTwo
         }
-        const resposta = await api.post('/user/create', user)
-        if (resposta.status === 200) {
+        const response = await api.post('/user/create', user)
+        if (response.status === 200) {
             navigate("/users");
         }
     }
@@ -73,7 +73,7 @@ return(
                 placeholder="Nome completo*:" 
                 type="text" 
                 name="fullName" id="fullName"
-                value={nomeCompleto}
+                value={fullName}
                 onChange={(event) => setFullName(event.target.value)}
                 
             />
@@ -89,14 +89,14 @@ return(
                 placeholder="Data de Nascimento*:" 
                 type="text" 
                 name="birthDate" id="input-birthDate"
-                value={dataNascimento} 
+                value={dateBirth} 
                 onChange={() => setBirthDate()}
             />
             <input className="input-tell inputsRegister" 
-                placeholder="Celular*:" 
+                placeholder="cellPhone*:" 
                 type="number" 
                 name="Tell" id="input-tell"
-                value={celular}
+                value={cellPhone}
                 onChange={(event) => setCell(event.target.value)}
 
             />
@@ -109,18 +109,18 @@ return(
                 
             />
             <input className="input-password inputsRegister" 
-                placeholder="Senha*:" 
+                placeholder="password*:" 
                 type="password" 
                 name="password" id="password"
-                value={senha}
+                value={password}
                 onChange={(event) => setPassword(event.target.value)}
 
             />
             <input className="input-repeatPassword inputsRegister" 
-                placeholder="Repetir Senha*:" 
+                placeholder="Repetir password*:" 
                 type="password" 
                 name="repeatPassword" id="repeatPassword"
-                value={repetirSenha}
+                value={repeatPassword}
                 onChange={(event) => setRePassword(event.target.value)}
 
             />
