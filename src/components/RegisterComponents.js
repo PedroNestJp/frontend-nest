@@ -14,8 +14,8 @@ const RegisterComponents = () =>{
     const [cellPhone, setCell] = useState("")
     const [password, setPassword] = useState("")
     const [repeatPassword, setRePassword] = useState("")
-    const [acceptTermOne, setAcceptTermOne] = useState(2)
-    const [acceptTermTwo, setAcceptTermTwo] = useState()
+    const [acceptTermOne, setAcceptTermOne] = useState(Boolean)
+    const [acceptTermTwo, setAcceptTermTwo] = useState(Boolean)
     const navigate = useNavigate();
 
     useEffect(() => {
