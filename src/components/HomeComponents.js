@@ -18,7 +18,7 @@ return(
         <h1 className="ads-text "> ADS </h1> 
     </section> 
 
-    <span> 
+    <span className='chatWhatsapp'> 
       <Link 
         to="https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0" 
         target="_blank" 

@@ -265,12 +265,14 @@ a#textTypePc{
     height: 80px;
     left: 75%;
     top: 80%;
+    color: #E20100;
 }
 
 .icon-chat:hover{
 
     width: 110px;
     height: 110px;
+    color: rgb(39, 154, 39);
 
 }
 

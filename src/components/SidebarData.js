@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
 
 export const SidebarData = [
   {
@@ -11,33 +12,33 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
-    path: '/reports',
+    title: 'Meus dados',
+    path: '/minhaconta',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
-    title: 'Products',
+    title: 'Mais Vendidos',
     path: '/products',
-    icon: <FaIcons.FaCartPlus />,
+    icon: <FaIcons.FaFire />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />,
+    title: 'Destaques',
+    path: '/products',
+    icon: <FaIcons.FaStar />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    title: 'Favoritos',
+    path: '/favoritos',
+    icon: <FaIcons.FaHeart />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: 'Atendimento ao cliente',
+    path: 'https://api.whatsapp.com/message/JVU7KU5D3563D1?autoload=1&app_absent=0',
+    icon: <RiIcons.RiCustomerService2Fill />,
     cName: 'nav-text'
   }
 ];

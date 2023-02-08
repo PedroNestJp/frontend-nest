@@ -2,39 +2,43 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../../service/Api'
 
-const ListarProdutos = () => {
+const ListProducts = () => {
 
-    const [produtos, setProdutos] = useState([])
+    const [products, setProducts] = useState([])
     const navigate = useNavigate()
 
     useEffect(() => {
-        recuperarProdutos()
+        // callProducts()
     }, [])
 
-    const recuperarProdutos = async () => {
-        const resposta = await api.get('/products')
-        setProdutos(resposta.data)
+    const callProducts = async () => {
+        const response = await api.get('/products')
+        setProducts(response.data)
     }
 
-    const deletarProduto = async (id) => {
-        const resposta = await api.delete(`/product/delete/${id}`)
-        setProdutos(resposta.data)
+    const deleteProduct = async (id) => {
+        const response = await api.delete(`/product/delete/${id}`)
+        setProducts(response.data)
     } 
     navigate('/products')
 
-    const preencheTabela = () => {
-        return produtos.map((produto) => (
-            <tr>
+    const fillTheTable = () => {
+        return products.map((produto) => (
+            <tr key={produto.id}>
                 <td>{produto.id}</td>
-                <td>{produto.nome}</td>
+                <td>{produto.name}</td>
                 <td>{produto.descricao}</td>
                 <td>{produto.valor}</td>
                 <td>{produto.createdAt}</td>
                 <td>
-                    <Link to={`/product/update/${produto.id}`} produto={produto}>
+                    <Link 
+                        to={`/product/update/${produto.id}`} produto={produto}>
                         <button>Editar</button>
                     </Link>
-                    <button onClick={() => deletarProduto(produto.id)}>Excluir</button>
+                    <button 
+                        onClick={() => deleteProduct(produto.id)}
+                        >Excluir
+                    </button>
                 </td>
             </tr>
           ))
@@ -50,7 +54,7 @@ const ListarProdutos = () => {
                     </button>
                 </Link>
             </div>
-            {produtos.length > 0 ? <table>
+            {products.length > 0 ? <table>
                 <thead>
                     <tr>
                         <td>Código</td>
@@ -62,7 +66,7 @@ const ListarProdutos = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {preencheTabela()}
+                    {fillTheTable()}
                 </tbody>
             </table> : "Carregando produtos..."}
             
@@ -70,4 +74,4 @@ const ListarProdutos = () => {
     )
 }
 
-export default ListarProdutos
+export default ListProducts

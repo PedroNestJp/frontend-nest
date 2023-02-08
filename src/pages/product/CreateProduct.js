@@ -4,20 +4,20 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 const CreateProduct = () => {
-    const [nome, setNome] = useState("")
-    const [descricao, setDescricao] = useState("")
-    const [valor, setValor] = useState("")
+    const [name, setname] = useState("")
+    const [description, setdescription] = useState("")
+    const [price, setprice] = useState("")
     const navigate = useNavigate();
 
     const cadastrarProduto = async (event) => {
         event.preventDefault()
-        const produto = {
-            nome: nome,
-            descricao: descricao,
-            valor: valor 
+        const product = {
+            name: name,
+            description: description,
+            price: price 
         }
-        const resposta = await api.post('/product/create', produto)
-        if (resposta.status === 200) {
+        const response = await api.post('/product/create', product)
+        if (response.status === 200) {
             navigate("/products");
         }
     }
@@ -31,32 +31,32 @@ const CreateProduct = () => {
                 </button>
             </Link> 
             <div>
-                <label>Nome:</label>
+                <label>name:</label>
                 <input 
                     type="text" 
                     name="titulo" 
-                    placeholder="Nome do produto" 
-                    value={nome}
-                    onChange={(event) => setNome(event.target.value)}
+                    placeholder="name do produto" 
+                    value={name}
+                    onChange={(event) => setname(event.target.value)}
                  />
             </div>
             <div>
                 <label>Descrição:</label>
                 <input 
                     type="text" 
-                    name="descricao" 
+                    name="description" 
                     placeholder="Descrição do produto" 
-                    value={descricao} 
-                    onChange={(event) => setDescricao(event.target.value)}/>
+                    value={description} 
+                    onChange={(event) => setdescription(event.target.value)}/>
             </div>
             <div>
-                <label>Valor:</label>
+                <label>price:</label>
                 <input 
                     type="text" 
-                    name="Valor" 
-                    placeholder="Valor do produto" 
-                    value={valor}
-                    onChange={(event) => setValor(event.target.value)}
+                    name="price" 
+                    placeholder="price do produto" 
+                    value={price}
+                    onChange={(event) => setprice(event.target.value)}
                     />
             </div>
             <button onClick={(e) => cadastrarProduto(e)}>Cadastrar</button>

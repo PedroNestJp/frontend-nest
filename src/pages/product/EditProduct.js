@@ -4,9 +4,9 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 import api from "../../service/Api"
 
 const EditProduct = (props) => {
-    const [nome, setNome] = useState("")
-    const [descricao, setDescricao] = useState("")
-    const [valor, setValor] = useState("")
+    const [name, setname] = useState("")
+    const [description, setdescription] = useState("")
+    const [price, setprice] = useState("")
     const { id } = useParams()
     const navigate = useNavigate();
 
@@ -16,17 +16,17 @@ const EditProduct = (props) => {
 
     const buscarProduto = async () => {
         const resposta = await api.get(`/products/${id}`)
-        setNome(resposta.data.nome)
-        setDescricao(resposta.data.descricao)
-        setValor(resposta.data.valor)
+        setname(resposta.data.name)
+        setdescription(resposta.data.description)
+        setprice(resposta.data.price)
     }
 
     const editarProduto = async (event) => {
         event.preventDefault()
         const produto = {
-            nome: nome,
-            descricao: descricao,
-            valor: valor 
+            name: name,
+            description: description,
+            price: price 
         }
         const resposta = await api.put(`/product/update/${id}`, produto)
         if (resposta.status === 200) {
@@ -43,33 +43,33 @@ const EditProduct = (props) => {
                 </button>
             </Link> 
             <div>
-                <label>Nome:</label>
+                <label>name:</label>
                 <input 
                     type="text" 
                     name="titulo" 
-                    placeholder="Nome do produto" 
-                    value={nome}
-                    onChange={(event) => setNome(event.target.value)}
+                    placeholder="name do produto" 
+                    value={name}
+                    onChange={(event) => setname(event.target.value)}
                  />
             </div>
             <div>
                 <label>Descrição:</label>
                 <input 
                     type="text" 
-                    name="descricao" 
+                    name="description" 
                     placeholder="Descrição do produto" 
-                    value={descricao} 
-                    onChange={(event) => setDescricao(event.target.value)}
+                    value={description} 
+                    onChange={(event) => setdescription(event.target.value)}
                 />
             </div>
             <div>
                 <label>Preço:</label>
                 <input 
                     type="text" 
-                    name="valor" 
-                    placeholder="Valor do produto" 
-                    value={valor}
-                    onChange={(event) => setValor(event.target.value)}
+                    name="price" 
+                    placeholder="price do produto" 
+                    value={price}
+                    onChange={(event) => setprice(event.target.value)}
                 />
             </div>
             <button onClick={(e) => editarProduto(e)}>Atualizar</button>
