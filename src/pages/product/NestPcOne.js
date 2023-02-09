@@ -3,13 +3,13 @@ import '../product/ProductScreen.css'
 import { ContactLine1 } from "../../components/ContactLines"
 import { Footer, SubFooter } from "../../components/FooterComponents"
 import NavbarShortComponent from "../../components/NavbarShortComponent"
-import NestPcOneSc from "../../components/productsComponents/NestPcOne"
+import NestPcOneComponent from "../../components/productsComponents/NestPcOne"
 
-const ProductScreen = () => {
+const NestPcOne = () => {
  return(
   <>
     <NavbarShortComponent/>
-    <NestPcOneSc/>
+    <NestPcOneComponent/>
     <ContactLine1/>
     <Footer/>
     <SubFooter/>
@@ -17,4 +17,4 @@ const ProductScreen = () => {
  )
 }
 
-export default ProductScreen
+export default NestPcOne

@@ -1,7 +1,8 @@
 import "../../pages/product/ProductScreen.css"
-import { iconShopCart, iconTime, gab1, gamdiasAuraGc2  } from '../../img/imgs'
+import { gamdiasAuraGc2  } from '../../img/imgs'
+import Cronometro from "./Contador"
 
-const NestPcOneSc = () => {
+const NestPcOneComponent = () => {
     return(
 
         <div className="mainContentProduct">
@@ -21,10 +22,7 @@ const NestPcOneSc = () => {
                 </section>
                 <section className="containerProductDesc">
                     <div className="promotionCall"> 
-                        <div className='stopwatch'>
-                            <span className='offersEnd'> A oferta termina em : </span>
-                            <span className='timeLeft'> 2 DIAS 05:35 <img src={iconTime}/> </span>
-                        </div>
+                    <Cronometro/>
                         <div className='cardsPromo' >
                             <div className='offerDiscaunt'>
                                 <span> 2 </span>
@@ -76,4 +74,4 @@ const NestPcOneSc = () => {
     )
 }
 
-export default NestPcOneSc
+export default NestPcOneComponent

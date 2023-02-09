@@ -11,14 +11,12 @@
     align-items: center;
     justify-content: center;
 
- 
 }
 
 .containerProductFather{
     display: flex;
     gap: 40px;
     padding: 40px;
-    
     background: #D9D9D9;
 }
 
@@ -27,7 +25,7 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 40px;
+        padding: 20px;
         
         background: #D9D9D9;
     }
@@ -35,13 +33,36 @@
 
 .containerProductChild1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imgProduct{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+
 }
 
 .imgsProducts{
+
     display: flex;
-    flex-wrap: nowrap;
-    background-color: white;
+    margin-top: 60px;
+    align-items: flex-start;
+    width: 70px;
+
+}
+
+.imgsProductsSub{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .imgsProducts #redragonSuperior1,#redragonSuperior2,#redragonSuperior3{
@@ -50,34 +71,38 @@
     height: 90px;
 }
 
-.imgPrincipal{
-    width: 567px;
-    height: 660px;
-}
-
 .containerProductDesc{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
     background: #FFFFFF;
+    max-width: 650px;
 }
 
 .promotionCall{
 
     display: flex;
-    align-items: center;
     flex-direction: column;
     background: #D9D9D9;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+
 
 }
 
 .stopwatch{
 
+    display: flex;
     gap: 10px;
     background: #FFFFFF;
     border-radius: 5px;
     text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
 }
 
 .cardsPromo{
@@ -86,8 +111,10 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 10px;
     height: 70%;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
 
 }
 
@@ -96,9 +123,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 184px;
-    height: 60px;
     background: #FFFFFF;
+    border-radius: 5px;
+    width: -webkit-fill-available;
 
 }
 
@@ -107,39 +134,31 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 184px;
-    height: 60px;
+    width: -webkit-fill-available;
+    border-radius: 5px;
     background-color: #FFFFFF;
 }
 
 .offersEnd{
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-
+    display: flex;
+    align-items: center;
     color: #E20100;
 }
 
 .timeLeft{
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-
+    display: flex;
     color: #000000;
+    justify-content: center;
+    align-items: center;
 }
 
 .descText{
 
     display: flex;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-
+    line-height: 15px;
+    font-size: 15px;
     color: #000000;
 
 }
@@ -154,7 +173,7 @@
 
 .hanking{
 
-    gap: 15px;
+    gap: 10px;
     display: flex;
     align-items: center;
     color: #000000;
