@@ -65,7 +65,6 @@
 .descProductAdd{
 
     display: flex;
-    width: 452px;
     font-weight: 500;
     font-size: 12px;
     color: #000000;
@@ -131,9 +130,8 @@
 
 .inputCep{
 
-    width: 335px;
     height: 58px;
-    
+    width: -webkit-fill-available;
     background: #D9D9D9;
     opacity: 0.5;
     border: 1px solid rgba(0, 0, 0, 0.7);
@@ -142,27 +140,20 @@
 
 .buttonSubmitCep{
 
-    width: 171.59px;
-    height: 57.33px;
-    
+    width: -webkit-fill-available;
+    height: 55px;
     background: rgba(226, 1, 0, 0.81);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 5px;
-    
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 900;
-    font-size: 20px;
-
+    font-size: 15px;
     color: #FFFFFF;
 }
 
 .findCep{
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 12px;
     color: #000000;
 
 }

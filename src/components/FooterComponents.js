@@ -31,8 +31,8 @@ const Footer = ()=>{
                         <a className=" paymentMethods-footer">Formas de Pagamentos</a>
                     </li>
                 </div>
-                <div className="client">
-                <p> Clientes </p>
+                {/* <div className="client">
+                {/* <p> Clientes </p>
                     <li>
                         <a className=" myAccount-footer">Minha conta</a>
                     </li>
@@ -42,7 +42,7 @@ const Footer = ()=>{
                     <li>
                         <a className="myTickets-footer">Meus tickets</a>
                     </li>
-                </div>
+                </div> */}
                 <div className="help">
                 <p> Ajuda </p>
                     <li>

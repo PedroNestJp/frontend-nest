@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../pages/home/Home'
 import "../pages/home/Home.css"
 import {
-        logo,imgAmdType,typepc1, typepc2, typepc3, 
+        logo,imgAmdType,typepc1, typepc2, typepc3,gamdiasAuraGc2, 
         gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, imgBbdPeripherals, imgBbdHardware
 } from '../img/imgs'
 import * as RiIcons from 'react-icons/ri'
@@ -90,54 +90,87 @@ return(
 
 <section className="container-2" title="container-2" >
       
-        <div id="hl" title="highlights" className="hl-text">  DESTAQUES </div>
+        <div 
+            id="hl" 
+            title="highlights" 
+            className="hl-text"
+            >  DESTAQUES 
+        </div>
         <div className='highLightsBoxs' id='highlightsBoxs'>
             <div className="hl-1 styleBox"> 
                  <Link
-                    to='/favorites'
+                    to='/login'
                     className="favoriteIcon"  
                     alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
-                <img className="img-hl-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
+                <Link to='/nestpcGamer_1'>
+                <img 
+                    className="img-hl-1" 
+                    srcSet={gab1} 
+                    alt=""
+                />
+                </Link>
+
                 <div className="descValue  desc-hl-1">
+                    <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
                     <span className="oldPrice-hl-1 oldPrice-hl"> DE R$2.999,00 POR: </span>
                     <span className=" currentPrice-hl-1 currentPrice-hl"> R$2.599,00 </span>
                     <span className=" installmentPrice-hl-1 installmentPrice-hl "> OU 12X DE R$280,00 </span>   
                 </div>
-                <button className="button-buy"> VER MAIS </button>
+                <Link className='button-buy' to='/nestPcOne'>
+                VER MAIS 
+                    <button> </button>
+                </Link>
             </div>
 
             <div className="hl-2 styleBox">
                 <Link
-                    to='/favorites'
+                    to='/login'
                     className="favoriteIcon"  
                     alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
-                <img className="img-hl-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
-                <div className='descValue desc-hl-2'>    
+                <img 
+                    className="img-hl-2" 
+                    srcSet={gab2} 
+                    alt=""
+                />
+                <div className='descValue desc-hl-2'>
+                    <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
                     <span className="oldPrice-hl-3 oldPrice-hl"> DE R$2.999,00 POR: </span>
                     <span className=" currentPrice-hl-3 currentPrice-hl"> R$2.599,00 </span>
                     <span className=" installmentPrice-hl-3 installmentPrice-hl "> OU 12X DE R$280,00 </span>
                 </div>
-                <button className="button-buy"> VER MAIS </button>
+                <Link className='button-buy' to='/nestPcOne'>
+                VER MAIS 
+                    <button> </button>
+                </Link>
             </div>
+
 
             <div className="hl-3 styleBox"> 
                 <Link
-                    to='/favorites'
+                    to='/login'
                     className="favoriteIcon"  
                     alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
-                <img className="img-hl-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
+                <img 
+                    className="img-hl-3" 
+                    srcSet={gab3} 
+                    alt=""
+                />
                 <div className="descValue desc-hl-3">  
+                    <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
                     <span className="oldPrice-hl-3 oldPrice-hl"> DE R$2.999,00 POR: </span>
                     <span className=" currentPrice-hl-3 currentPrice-hl"> R$2.599,00 </span>
                     <span className=" installmentPrice-hl-3 installmentPrice-hl "> OU 12X DE R$280,00 </span>   
                 </div> 
-                <button className="button-buy"> VER MAIS </button> 
+                <Link className='button-buy' to='/nestPcOne'>
+                VER MAIS 
+                    <button> </button>
+                </Link>
             </div>
         </div>
 </section>
@@ -161,50 +194,77 @@ return(
     <div className='bestSelersBox' id='highlightsBoxs'>
         <div className="bs-1 styleBox"> 
                 <Link
-                    to='/favorites'
+                    to='/login'
                     className="favoriteIcon"  
                     alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
-            <img className="img-bs-1" srcSet={gab1} src="../assets/gabinetes/gab1.png" alt=""/>
+            <Link to='/nestPcOne'>
+            <img 
+                className="img-bs-1" 
+                srcSet={gamdiasAuraGc2} 
+                alt="NESTPC ONE"
+            />
+            </Link>
             <div className="descValue desc-bs-1"> 
-                <span className=" oldPrice-bs-1 oldPrice"> DE R$2.999,00 POR: </span>
-                <span className=" currentPrice-bs-1 currentPrice"> R$2.599,00 </span>
-                <span className=" installmentPrice-bs-1 installmentPrice "> OU 12X DE R$280,00 </span>   
+                <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
+                <span className=" oldPrice-bs-1 oldPrice"> DE R$3.999,00 POR: </span>
+                <span className=" currentPrice-bs-1 currentPrice"> R$3.399,00 </span>
+                <span className=" installmentPrice-bs-1 installmentPrice "> EM 12X DE R$245,00 </span>
             </div>
-            <button className="button-buy"> VER MAIS  </button>
+            <Link className='button-buy' to='/nestPcOne'>
+            VER MAIS 
+                <button> </button>
+            </Link>
         </div>
 
+
         <div className="bs-2 styleBox">
-                <Link
-                    to='/favorites'
-                    className="favoriteIcon"  
-                    alt="Icone Favoitos">
-                    <BsIcons.BsHeartFill/>
-                </Link> 
-            <img className="img-bs-2" srcSet={gab2} src="../assets/gabinetes/gab2.png" alt=""/>
+            <Link
+                to='/login'
+                className="favoriteIcon"  
+                alt="Icone Favoitos">
+                <BsIcons.BsHeartFill/>
+            </Link>
+            <img
+                className="img-bs-2" 
+                srcSet={gab2} 
+                alt=""
+            />
             <div className="descValue desc-bs-2"> 
+                <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
                 <span className=" oldPrice-bs-2 oldPrice"> DE R$2.999,00 POR: </span>
                 <span className=" currentPrice-bs-2 currentPrice"> R$2.599,00 </span>
                 <span className=" installmentPrice-bs-2 installmentPrice "> OU 12X DE R$280,00 </span>   
             </div>
-            <button className="button-buy"> VER MAIS  </button>
+            <Link className='button-buy' to='/nestPcOne'>
+            VER MAIS 
+                <button> </button>
+            </Link>
         </div>
 
         <div className="bs-3 styleBox">  
                 <Link
-                    to='/favorites'
+                    to='/login'
                     className="favoriteIcon"  
                     alt="Icone Favoitos">
                     <BsIcons.BsHeartFill/>
                 </Link>
-            <img className="img-bs-3" srcSet={gab3} src="../assets/gabinetes/gab3.png" alt=""/>
-            <div className="descValue desc-bs-3"> 
+            <img 
+                className="img-bs-3" 
+                srcSet={gab3} 
+                alt=""
+            />
+            <div className="descValue desc-bs-3">
+                <span className='descriptionProduct' > NESTPC GAMER, i3-10100f, GTX1650 4GB GDDR6, 16GB RAM 3200MHZ 2X8GB, SSD 512GB, FONTE 500W 80+ BRONZE, 3 FANS RGB</span>
                 <span className=" oldPrice-bs-3 oldPrice"> DE R$2.999,00 POR: </span>
                 <span className=" currentPrice-bs-3 currentPrice"> R$2.599,00 </span>
                 <span className=" installmentPrice-bs-3 installmentPrice "> OU 12X DE R$280,00 </span>  
             </div>
-            <button className="button-buy"> VER MAIS  </button>
+            <Link className='button-buy' to='/nestPcOne'>
+            VER MAIS 
+                <button> </button>
+            </Link>
         </div>
     </div>
 </section>

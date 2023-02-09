@@ -13,6 +13,7 @@ import ProductScreen from '../pages/product/ProductScreen'
 import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
 import RegisterComponents from '../components/RegisterComponents'
 import NestPcOne from '../pages/product/NestPcOne'
+import NestpcGamer_1 from '../pages/product/NestpcGamer_1'
 
  const Rotas = () => {
     return(
@@ -25,6 +26,7 @@ import NestPcOne from '../pages/product/NestPcOne'
           <Route path='/finalizeOrder' element={<FinalizeOrder/>} />
 
           <Route path='/nestPcOne' element={<NestPcOne/>} />
+          <Route path='/nestpcGamer_1' element={<NestpcGamer_1/>} />
           
           <Route path='/products' element={<ListProducts />} />
           <Route path='/product/create' element={<CreateProduct />} />

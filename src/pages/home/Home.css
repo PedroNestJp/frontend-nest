@@ -176,6 +176,8 @@ input:hover{
 
 .descValue{
 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: -webkit-center;
@@ -250,7 +252,7 @@ a#textTypePc{
 
     font-style: normal;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 12px;
     margin-top: 5px;
 
@@ -295,9 +297,7 @@ a#textTypePc{
     width: 200px;
 }
 .hl-text {
-    
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 900;
     font-size: 20px;
     line-height: 52px;
@@ -306,17 +306,23 @@ a#textTypePc{
     
 }
 
+Link{
+    display: flex;
+}
+
 .styleBox{
 
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     width: 240px;
     box-sizing: border-box;
     margin: 7px;
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .styleBox:hover{
@@ -341,17 +347,19 @@ a#textTypePc{
 
 .button-buy{
 
-    width: 260px;
-    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -webkit-fill-available;
+    height: 40px;
     transition: 0.3s;
     cursor: pointer;
     border-radius: 5px;
-    border: 2.3px solid #E20100;
+    border: 1px solid #E20100;
+    margin-top: 5PX;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 39px;
 
     color: #E20100;
@@ -364,16 +372,27 @@ a#textTypePc{
     cursor: pointer;
     background-color: #E20100;
     color: #F5F5F5;
-    font-size: 27px;
+    font-size: 22px;
+}
+
+.descriptionProduct{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    margin: 5px 0px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.3rem;
 }
 
 .currentPrice-hl-1, .currentPrice-hl-2 , .currentPrice-hl-3{
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 18px;
     
     color: #E20100;
 
@@ -381,12 +400,10 @@ a#textTypePc{
 
 .installmentPrice-hl-1, .installmentPrice-hl-2, .installmentPrice-hl-3,
 .oldPrice-hl-1, .oldPrice-hl-2, .oldPrice-hl-3 {
-  
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 12px;
     
     color: #000000;
 }
@@ -441,7 +458,6 @@ a#textTypePc{
 
 .text-platform-amd, .text-platform-intel{
 
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: #FF0101;
@@ -478,8 +494,6 @@ a#textTypePc{
 
 .bs-text {
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 900;
     font-size: 20px;
     color:#FF0101
@@ -487,20 +501,17 @@ a#textTypePc{
 
 .installmentPrice-bs-1, .installmentPrice-bs-2, .installmentPrice-bs-3,
 .oldPrice-bs-1 , .oldPrice-bs-2 , .oldPrice-bs-3 {
-    font-family: 'Poppins';
-    font-style: normal;
+
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    
+    font-size: 12px;
+    line-height: 12px;
     color: #000000;
 }
 .currentPrice-bs-1, .currentPrice-bs-2 , .currentPrice-bs-3{
-    font-family: 'Inter';
-    font-style: normal;
+
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 18px;
     
     color: #E20100;
 }
@@ -543,8 +554,6 @@ a#textTypePc{
 
 .departmentsText{
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 900;
     font-size: 20px;
     margin: 20px;
@@ -572,9 +581,7 @@ a#textTypePc{
 
 
 .bbd-text{
-    
-    font-family: 'Inter';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 15px;
     
@@ -596,8 +603,6 @@ a#textTypePc{
     width: 227px;
     height: 21px;
     
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
