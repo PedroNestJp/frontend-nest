@@ -1,5 +1,6 @@
 
-import {iconProfile, logo } from '../img/imgs'
+import {logo } from '../img/imgs'
+import * as BsIcons from 'react-icons/bs'
 
 
 const NavbarShortComponent = () =>{
@@ -11,7 +12,7 @@ const NavbarShortComponent = () =>{
         </a>
         <div className='areaProfileNavShort'>
             <a href="./myAccount.html">               
-                <img className='iconProfileHome' src={iconProfile}/>
+                <img className='iconProfileHome' src={<BsIcons.BsPersonCircle/>}/>
             </a>
             <span className="textProfileNavShort">
                     Faça seu{' '}

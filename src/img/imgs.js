@@ -1,14 +1,5 @@
 
 import logo from '../assets/logoNestNew.png'
-import iconProfile from '../assets/icons/icon-profile.png'
-import iconShopCart from '../assets/icons/icon-shoppingCart.png'
-import iconFavorites from '../assets/icons/favoriteIcon.png'
-import iconLupa from '../assets/icons/icon-lupa.png'
-import iconSupport from '../assets/icons/icon-support.png'
-import menuHamburguer from '../assets/icons/menuHamburguer.png'
-import iconChat from '../assets/icons/iconChat.png'
-import iconBuy from '../assets/icons/icon-comprar.png'
-import starIcon from '../assets/icons/star.svg'
 
 import iconFacebook from '../assets/icons/iconFacebook.png'
 import iconWhatsapp from '../assets/icons/iconWhatsApp.png'
@@ -19,14 +10,6 @@ import iconYoutube from '../assets/icons/iconYoutube.png'
 import iconLinkedin from '../assets/icons/iconLinkedIn.png'
 import iconTime from '../assets/icons/Time.png'
 
-import imgBackground2 from '../assets/background2.png'
-
-import typepc1 from '../assets/typepc-1.png'
-import typepc2 from '../assets/typepc-2.png'
-import typepc3 from '../assets/typepc-3.png'
-import gab1 from '../assets/gabinetes/gab1.png'
-import gab2 from '../assets/gabinetes/gab2.png'
-import gab3 from '../assets/gabinetes/gab3.png'
 import imgIntelType from '../assets/buyByPlatform/buyByPlatform-img-intel.png'
 import imgAmdType from '../assets/buyByPlatform/buyByPlatform-img-amd.png'
 import imgBbdPc from '../assets/pcs.png'
@@ -34,16 +17,24 @@ import imgBbdMonitor from '../assets/monitores.png'
 import imgBbdPeripherals from '../assets/kitGamer.png'
 import imgBbdHardware from '../assets/hardware.png'
 
-import redragonSuperior1 from '../assets/gabinetes/redragon-superior-01.jpg'
-import redragonSuperior2 from '../assets/gabinetes/redragon-superior-02.jpg'
-import redragonSuperior3 from '../assets/gabinetes/redragon-superior-03.jpg'
+import aigoBlackTech1 from '../assets/gabinetes/gamer/gabinente-aigo-blacktech-1.png'
+import aigoBlackTech2 from '../assets/gabinetes/gamer/gabinente-aigo-blacktech-2.png'
+import aigoBlackTech3 from '../assets/gabinetes/gamer/gabinente-aigo-blacktech-3.png'
+import aerocoolTrinity1 from '../assets/gabinetes/gamer/gabinete-aerocool-trinity-pink-1.png'
+import aerocoolTrinity2 from '../assets/gabinetes/gamer/gabinete-aerocool-trinity-pink-2.png'
+import aerocoolTrinity3 from '../assets/gabinetes/gamer/gabinete-aerocool-trinity-pink-3.png'
+import redragonSuperior1 from '../assets/gabinetes/gamer/redragon-superior-01.png'
+import redragonSuperior2 from '../assets/gabinetes/gamer/redragon-superior-02.png'
+import redragonSuperior3 from '../assets/gabinetes/gamer/redragon-superior-03.png'
+import gamdiasAuraGc2 from '../assets/gabinetes/gamer/gabinete-gamdias-aura-gc2.png'
+import gamdiasTalosE1 from '../assets/gabinetes/gamer/gabinete-gamdias-talosE1.png'
+import tDagger from '../assets/gabinetes/gamer/gabinete-gamer-t-dagger-g28b.png'
+import tgtB110 from '../assets/gabinetes/office-premium/gabinete-tgt-b110.png'
+import powerx6503 from '../assets/gabinetes/office-premium/gabinete-powerx-6503bk.png'
 
-import gamdiasAuraGc2 from '../assets/gabinetes/gabinete-gamdias-aura-gc2.png'
-
-export {iconTime,gamdiasAuraGc2, redragonSuperior1, redragonSuperior2 ,redragonSuperior3 ,iconProfile,logo, iconBuy, iconChat, 
-        iconFacebook, iconFavorites, iconGmail, 
-        iconLinkedin, iconLupa, iconShopCart, iconSupport, iconTelegram, 
-        iconWhatsapp, iconYoutube, imgAmdType, imgBackground2, iconInstagram, 
-        typepc1, typepc2, typepc3, gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, 
-        imgBbdPeripherals, imgBbdHardware, menuHamburguer, starIcon }
+export {iconTime,gamdiasAuraGc2, redragonSuperior1, redragonSuperior2 ,redragonSuperior3,logo, 
+        iconFacebook,iconGmail,iconLinkedin,iconTelegram, iconWhatsapp, iconYoutube, imgAmdType,
+        iconInstagram, aigoBlackTech1,aigoBlackTech2,aigoBlackTech3,imgIntelType,imgBbdPc, imgBbdMonitor,
+        imgBbdPeripherals,imgBbdHardware,aerocoolTrinity1,aerocoolTrinity2,aerocoolTrinity3,gamdiasTalosE1,tDagger,
+        tgtB110, powerx6503 }
 

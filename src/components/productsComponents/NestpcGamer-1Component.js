@@ -1,5 +1,5 @@
 import "../../pages/product/ProductScreen.css"
-import { gab1 } from '../../img/imgs'
+import { aigoBlackTech1, aigoBlackTech2, aigoBlackTech3 } from '../../img/imgs'
 import Cronometro from "./Contador"
 
 const NestpcGamer_1 = () => {
@@ -9,13 +9,13 @@ const NestpcGamer_1 = () => {
             <div className="containerProductFather">
                 <section className='containerProductChild1'>
                     <div className="imgProduct">
-                        <img className="imgPrincipal" src={gab1}/>
+                        <img className="imgPrincipal" src={aigoBlackTech1}/>
                     </div>
                     <div className="imgsProducts">
                         <span className='imgsProductsSub'>
-                            <img id='nestPcOneImgSec1' src={gab1}/>
-                            <img id='nestPcOneImgSec2' src={gab1}/>
-                            <img id='nestPcOneImgSec2' src={gab1}/> 
+                            <img id='nestPcOneImgSec1' src={aigoBlackTech1}/>
+                            <img id='nestPcOneImgSec2' src={aigoBlackTech2}/>
+                            <img id='nestPcOneImgSec2' src={aigoBlackTech3}/> 
                         </span>
                     </div>
                 

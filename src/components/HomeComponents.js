@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import '../pages/home/Home'
 import "../pages/home/Home.css"
 import {
-        logo,imgAmdType,typepc1, typepc2, typepc3,gamdiasAuraGc2, 
-        gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, imgBbdPeripherals, imgBbdHardware
+        logo,imgAmdType,gamdiasAuraGc2, gab2,gab3,imgIntelType, imgBbdPc,
+        imgBbdMonitor, imgBbdPeripherals, imgBbdHardware, tDagger, tgtB110, aigoBlackTech1, aerocoolTrinity1, redragonSuperior1, gamdiasTalosE1
 } from '../img/imgs'
 import * as RiIcons from 'react-icons/ri'
 import * as BsIcons from 'react-icons/bs'
@@ -45,7 +45,7 @@ return(
                 <Link to='/productScreen'>
                     <img
                         className="img-typepc-1" 
-                        src={typepc1} 
+                        src={redragonSuperior1} 
                         alt="PC GAMER">
                     </img>
                     <span 
@@ -60,7 +60,7 @@ return(
                 <Link to='/productScreen'>
                     <img
                         className="img-typepc-2" 
-                        src={typepc2} 
+                        src={tDagger} 
                         alt="PC OFFICE PREMIUM">
                     </img>
                     <span 
@@ -75,7 +75,7 @@ return(
                 <Link to='/productScreen'>
                     <img
                         className="img-typepc-3" 
-                        src={typepc3} 
+                        src={tgtB110} 
                         alt="PC OFFICE">
                     </img>
                     <span 
@@ -107,7 +107,7 @@ return(
                 <Link to='/nestpcGamer_1'>
                 <img 
                     className="img-hl-1" 
-                    srcSet={gab1} 
+                    srcSet={aigoBlackTech1} 
                     alt=""
                 />
                 </Link>
@@ -133,7 +133,7 @@ return(
                 </Link>
                 <img 
                     className="img-hl-2" 
-                    srcSet={gab2} 
+                    srcSet={aerocoolTrinity1} 
                     alt=""
                 />
                 <div className='descValue desc-hl-2'>
@@ -158,7 +158,7 @@ return(
                 </Link>
                 <img 
                     className="img-hl-3" 
-                    srcSet={gab3} 
+                    srcSet={redragonSuperior1} 
                     alt=""
                 />
                 <div className="descValue desc-hl-3">  
@@ -228,7 +228,7 @@ return(
             </Link>
             <img
                 className="img-bs-2" 
-                srcSet={gab2} 
+                srcSet={aerocoolTrinity1} 
                 alt=""
             />
             <div className="descValue desc-bs-2"> 
@@ -252,7 +252,7 @@ return(
                 </Link>
             <img 
                 className="img-bs-3" 
-                srcSet={gab3} 
+                srcSet={gamdiasAuraGc2}
                 alt=""
             />
             <div className="descValue desc-bs-3">
