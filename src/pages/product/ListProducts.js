@@ -4,44 +4,46 @@ import api from '../../service/Api'
 
 const ListProducts = () => {
 
+    // const navigate = useNavigate()
     const [products, setProducts] = useState([])
-    const navigate = useNavigate()
 
     useEffect(() => {
-            callProducts()
+        callProducts()
     }, [])
-
+    
     const callProducts = async () => {
         const response = await api.get('/products')
         setProducts(response.data)
-    }
-
-    const deleteProduct = async (id) => {
-        const response = await api.delete(`/product/delete/${id}`)
-        setProducts(response.data)
+        console.log(response.data)
     } 
-    navigate('/products')
-
-    const fillTheTable = () => {
-        return products.map((produto) => (
-            <tr key={produto.id}>
-                <td>{produto.id}</td>
-                <td>{produto.name}</td>
-                <td>{produto.description}</td>
-                <td>{produto.price}</td>
-                <td>{produto.createdAt}</td>
+    
+    
+    // const deleteProduct = async (id) => {
+    //     const response = await api.delete(`/product/delete/${id}`)
+    //     setProducts(response.data)
+    // } 
+    // navigate('/products')
+    
+    function fillTheTable() {
+        return products.map((product) => (
+            <tr key={product.id}>
+                <td>{product.id}</td>
+                <td>{product.name}</td>
+                <td>{product.description}</td>
+                <td>{product.price}</td>
+                <td>{product.createdAt}</td>
                 <td>
-                    <Link 
-                        to={`/product/update/${produto.id}`} produto={produto}>
+                    <Link
+                        to={`/product/update/${product.id}`} product={product}>
                         <button>Editar</button>
                     </Link>
-                    <button 
-                        onClick={() => deleteProduct(produto.id)}
-                        >Excluir
-                    </button>
+                    {/* <button
+                        onClick={() => deleteProduct(product.id)}
+                    >Excluir
+                    </button> */}
                 </td>
             </tr>
-          ))
+        ))
     }
 
     return (
