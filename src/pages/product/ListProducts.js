@@ -26,17 +26,17 @@ const ListProducts = () => {
     
     function fillTheTable() {
         return products.map((product) => (
-            <tr key={product.id}>
+            <tr>
                 <td>{product.id}</td>
                 <td>{product.name}</td>
                 <td>{product.description}</td>
                 <td>{product.price}</td>
                 <td>{product.createdAt}</td>
                 <td>
-                    <Link
+                    {/* <Link
                         to={`/product/update/${product.id}`} product={product}>
                         <button>Editar</button>
-                    </Link>
+                    </Link> */}
                     {/* <button
                         onClick={() => deleteProduct(product.id)}
                     >Excluir
@@ -56,21 +56,23 @@ const ListProducts = () => {
                     </button>
                 </Link>
             </div>
-            {products.length > 0 ? <table>
-                <thead>
-                    <tr>
-                        <td>Código</td>
-                        <td>Nome do produto</td>
-                        <td>Descrição</td>
-                        <td>valor</td>
-                        <td>Criado em:</td>
-                        <td></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {fillTheTable()}
-                </tbody>
-            </table> : "Carregando produtos..."}
+            {products.length > 0 ? 
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Código</td>
+                            <td>Nome do produto</td>
+                            <td>Descrição</td>
+                            <td>valor</td>
+                            <td>Criado em:</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {fillTheTable()}
+                    </tbody>
+                </table> 
+            : "Carregando produtos..."}
             
         </div>
     )

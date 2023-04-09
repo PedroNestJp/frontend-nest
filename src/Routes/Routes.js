@@ -14,6 +14,8 @@ import FinalizeOrder from '../pages/finalizeOrder/FinalizeOrderScreen'
 import RegisterComponents from '../components/RegisterComponents'
 import NestPcOne from '../pages/product/NestPcOne'
 import NestpcGamer_1 from '../pages/product/NestpcGamer_1'
+import ShoppingCart from '../test/testShoppingCart'
+import App from '../test/AppEcommerceSimple'
 
  const Rotas = () => {
     return(
@@ -36,6 +38,8 @@ import NestpcGamer_1 from '../pages/product/NestpcGamer_1'
           <Route path='/users' element={<ListUser/>} />
           <Route path='/user/create' element={<RegisterComponents/>} />
           <Route path='/user/update/:id' element={<UpdateUser/>} />
+          <Route path='/shoppingCart' element={<ShoppingCart/>} />
+          <Route path='/AppExample' element={<App/>} />
         </Routes>
     )
 }

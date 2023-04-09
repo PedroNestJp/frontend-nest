@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../pages/home/Home'
 import "../pages/home/Home.css"
 import {
-        logo,imgAmdType,gamdiasAuraGc2, gab2,gab3,imgIntelType, imgBbdPc,
+        logo,imgAmdType,gamdiasAuraGc2,imgIntelType, imgBbdPc,
         imgBbdMonitor, imgBbdPeripherals, imgBbdHardware, tDagger, tgtB110, aigoBlackTech1, aerocoolTrinity1, redragonSuperior1, gamdiasTalosE1
 } from '../img/imgs'
 import * as RiIcons from 'react-icons/ri'

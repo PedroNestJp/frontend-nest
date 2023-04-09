@@ -1,13 +1,12 @@
-import {BrowserRouter, Route} from 'react-router-dom'
-import Routes from './Routes/Routes'
+import {BrowserRouter} from 'react-router-dom'
+import Rotas from './Routes/Routes';
 
 function App() {
   return (
     <>
      <BrowserRouter>
-        <Routes/>
+        <Rotas/>
 
-   
      </BrowserRouter>
     </>
   );

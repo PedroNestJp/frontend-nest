@@ -7,6 +7,7 @@ const CreateProduct = () => {
     const [name, setname] = useState("")
     const [description, setdescription] = useState("")
     const [price, setprice] = useState("")
+    const [rating, setRating] = useState("")
     const navigate = useNavigate();
 
     const cadastrarProduto = async (event) => {
@@ -14,9 +15,11 @@ const CreateProduct = () => {
         const product = {
             name: name,
             description: description,
-            price: price 
+            price: price,
+            rating: rating,
         }
         const response = await api.post('/product/create', product)
+        response.set('Access-Control-Allow-Origin', '*')
         if (response.status === 200) {
             navigate("/products");
         }
@@ -57,6 +60,16 @@ const CreateProduct = () => {
                     placeholder="price do produto" 
                     value={price}
                     onChange={(event) => setprice(event.target.value)}
+                    />
+            </div>
+            <div>
+                <label>Rating:</label>
+                <input 
+                    type="text" 
+                    name="reviews" 
+                    placeholder="reviews do produto" 
+                    value={rating}
+                    onChange={(event) => setRating(event.target.value)}
                     />
             </div>
             <button onClick={(e) => cadastrarProduto(e)}>Cadastrar</button>
